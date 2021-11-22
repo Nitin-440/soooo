@@ -1,8 +1,16 @@
+<!-- Created by Total cartoon 2 -->
 
+<!-- Created by 丹ⓨㄩک廾 -->
+
+<!DOCTYPE html>
 <html>
     <head>
+
+        <title>My Portfolio</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+            /* Created by Total cartoon 2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 *{
     box-sizing:border-box;
@@ -465,10 +473,127 @@ p{
         color:white;
     }
     90%{
+        transform:scale(1);
+        background-color:red;
+        color:blue;
+    }
+    100%{
+        transform:scale(0);
+    }
+}
+/*-------------------------------------------*/
+#spin_container{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    background-image:url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
+    left:0;
+    display:none;
+}
+#cut_spin{
+    height:25px;
+    width:25px;
+    top:10px;
+    right:10px;
+    position:fixed;
+    border-radius:50%;
+    background-color:lime;
+    text-align:center;
+    font-size:23px;
+}
+#w1 {
+    perspective: 800px;
+    width:200px;
+    height:200px;
+}
+#w2 {
+    position: absolute ;
+    width: 200px;
+    transform-origin: 100px 100px 0;
+    height:200px;
+    transform-style: preserve-3d;
+    margin-top:calc(50vh - 100px);
+    margin-left:calc(50vw - 100px);
+    animation: spin 60s ease-in-out infinite ;
+}
+#w2 > div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform-origin: 100px 100px 0;
+    opacity:0.9;
+    transition-duration:2s;
+    
+}
+#f1 {
+    transform: translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTII_GRn6_aEldP79AgY6qFsjdbdUhNFo-A6A&usqp=CAU");
+    background-size:100% 100%;
+}
+#f2 {
+    transform: rotateY(180deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:chocolate;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmPNTuT2zsjCgmOCCj8QciHnCIofbefJlhkg&usqp=CAU");
+    background-size:100% 100%;
+}
 
-        <title>My Portfolio</title>
+#f3 {
+    transform: rotateY(-90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    
+    background-color:orange;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRribnlwtzoj_KeypBlgV48Idk7in1HrGeGWg&usqp=CAU");
+    background-size:100% 100%;
+}
+
+#f4 {
+    transform: rotateY(90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:violet;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTw5WQxw9z1ip2l9-qkmfSqEdGJ97fYtIBMpA&usqp=CAU");
+    background-size:100% 100%;
+}
+#f5 {
+    transform: rotateX(90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:green;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSP1CroHGjQ1tlvi8jbNZ3a7y0d8rBZJbmIAw&usqp=CAU");
+    background-size:100% 100%;
+}
+
+#f6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    box-shadow: 0 0 10px lightgray;
+    background-color:blue;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtH3nfAedetvWrZxs_1W1gTwPPO9sTd4hQhA&usqp=CAU");
+    background-size:100% 100%;
+}
+@keyframes spin{    
+    20% { 
+        transform: rotateY(-450deg) rotateX(360deg); 
+    }
+    40% {
+        transform: rotateY(90deg) rotateX(-360deg); 
+    }
+    60% { 
+    transform: rotateY(-360deg) rotateX(450deg); 
+    }
+    80% { 
+    transform: rotateY(360deg) rotateX(-90deg);
+    }
+}
+
+#aud{
+    display:none;
+}
+            
+            
+            </style>
         <script>
-        window.addEventListener("mouseover",play);
+            window.addEventListener("mouseover",play);
 window.addEventListener("click",play);
 function play(){ 
     document.getElementById("aud").play();
@@ -617,9 +742,8 @@ window.onload = function(){
     _INTERVAL_VAL = setInterval(Type, 100);
     /*type writer logic ends ----------------------*/
 }
-        </script>
+            </script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9">
-        
         
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -789,6 +913,7 @@ L313,289 S301,297 290,293 L290,293 S273,285 268,300 L264,310 S257,326 244,310 L2
         <audio id="aud" controls autoplay loop>
             <source  src="https://www.dropbox.com/s/s6g797t7jbi4yn9/LaVieNeMentPastSadRingtone1927868627.mp3?raw=1" type="audio/mpeg"/>
         </audio>
+        
         
         
     </body>
